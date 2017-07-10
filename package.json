@@ -1,0 +1,25 @@
+{
+  "name": "nulogy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node index.js --presets es2015,stage-0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marjan2k/node-babel-mocha.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marjan2k/node-babel-mocha/issues"
+  },
+  "homepage": "https://github.com/marjan2k/node-babel-mocha#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}
