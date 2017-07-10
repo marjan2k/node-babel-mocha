@@ -1,8 +1,13 @@
-const testFunc = (input) => (input)
+const markupCalculator = (base, persons=1, type=undefined) => {
+    if (!base) throw("Base price must be included")
+    if (base < 0) throw("Base price cannot be negative")
 
-console.log(testFunc(31231))
+
+  return 0
+}
+
 
 export {
-  testFunc,
-  testFunc as default
+    markupCalculator,
+    markupCalculator as default
 }
