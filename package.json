@@ -4,14 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-register",
-    "start": "babel-node index.js --exec babel-node"
+    "test": "mocha --compilers js:babel-register"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/marjan2k/node-babel-mocha.git"
   },
-  "author": "",
+  "author": "Marjan Ahmed",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/marjan2k/node-babel-mocha/issues"

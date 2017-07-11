@@ -1,7 +1,7 @@
 import _ from "lodash"
 import * as markupMultipliers from "./markupMultipliers"
 
-const markupCalculator = (basePrice, numPersons=1, materialType=null) => {
+const markupCalculator = (basePrice, numPersons=1, materialType) => {
     if (!basePrice) throw("Base price must be included")
     if (basePrice < 0) throw("Base price cannot be negative")
     if (numPersons <= 0) throw("Atleast one person required to work on the job")
