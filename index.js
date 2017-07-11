@@ -1,3 +1,4 @@
+import _ from "lodash"
 import * as markupMultipliers from "./markupMultipliers"
 
 const markupCalculator = (basePrice, numPersons=1, materialType=null) => {
@@ -7,10 +8,16 @@ const markupCalculator = (basePrice, numPersons=1, materialType=null) => {
 
     const {flatMarkup, personMarkup, typeMarkup} =  markupMultipliers
 
-  return 0
-}
+    let baseMarkupValue = basePrice * ( 100 + flatMarkup ) / 100
 
-console.log(markupCalculator(100, 11))
+    let personMarkupValue = numPersons * personMarkup
+    let typeMarkupValue = _.get(typeMarkup, materialType, 0)
+
+    let otherMarkupValue = ( 100 + personMarkupValue + typeMarkupValue ) / 100
+    let total = baseMarkupValue * otherMarkupValue
+
+    return parseFloat(total.toFixed(2))
+}
 
 export {
     markupCalculator,
